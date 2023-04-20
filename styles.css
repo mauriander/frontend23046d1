@@ -1,0 +1,262 @@
+.nav {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 1.2em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0.5;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 999;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin: 0;
+
+  padding: 0 1%;
+}
+.logocodoacodo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.pnglogocodoacodo {
+  width: 150px;
+  height: 100px;
+}
+
+.texto {
+  font-size: x-large;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu {
+  margin-top: 15px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menuw {
+  display: inline-block;
+  position: relative;
+}
+.menuw-content {
+  font-size: x-large;
+  display: none;
+  position: absolute;
+  width: 200px;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.menuw:hover .menuw-content {
+  padding: 5px;
+  width: fit-content;
+  display: block;
+
+  background-color: #000000;
+}
+.menuw-content a {
+  display: inline-flex;
+
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+}
+.menuw-content a:hover {
+  color: gray;
+}
+
+.menuul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuli:hover {
+  opacity: 0.7;
+}
+
+.menuli {
+  list-style: none;
+  display: flex;
+  margin: 0.5em;
+}
+
+.menuli.a {
+  color: #fff;
+  text-decoration-color: white;
+  text-decoration-line: none;
+}
+.menuli:last-child {
+  margin: 0.5em 2.5em 0.5em 0.5em !important;
+}
+
+.main {
+  top: 0 auto;
+  margin: 0;
+  align-content: center;
+  background-color: aqua;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.textimage{
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  float: right;
+  width: 50%;
+  text-align: end;
+  padding-right: 60px;
+
+  
+}
+.buttonimages {
+  flex-direction: row;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  column-gap: 16px;
+  
+  text-align: end;
+  padding-right: 60px;
+}
+.buttonimg1 {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 8px;  
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+.buttonimg2 {
+  background-color: transparent;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 8px;
+  
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttonimg1:hover {
+  opacity: 0.75;
+}
+.buttonimg2:hover {
+  opacity: 0.7;
+}
+
+.card-container {
+  padding-left: 12%;
+  padding-right: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  padding: 20px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+h3 {
+  text-align: center;
+}
+h2 {
+  font-weight: bolder;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+  align-content: center;
+}
+.apenom {
+  flex-direction: row;
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 10px;
+  column-gap: 5px;
+}
+input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #d1d1d6;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #d1d1d6;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: grey;
+  background-color: #f6f6f8;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007aff;
+  box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.3);
+}
+
+/* style form button */
+input[type="submit"] {
+  display: block;
+  margin: 16px auto;
+  padding: 12px 24px;
+  background-color: #007c38;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+input[type="submit"]:hover {
+  opacity: 0.7;
+}
