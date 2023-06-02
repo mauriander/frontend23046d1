@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conferencia BS AS</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href=""
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <!-- Nbootstramp-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <!--Normal -->
+      <section class="logocodoacodo">
+        <a href="/index.html">
+          <img class="pnglogocodoacodo" src="../../../img/codoacodo.png" alt=""
+        /></a>
+        <div class="texto">
+          <p>Conf Bs As</p>
+        </div>
+      </section>
+
+      <!--Normal  <section class="menu" *ngIf="!onAchica()"> -->
+
+      <section class="menu">
+        <ul class="menuul">
+          <li class="menuli">
+            <a style="text-decoration-line: none" href="/conferencia">
+              <a style="color: gray">La conferencia</a></a
+            >
+          </li>
+          <li class="menuli">
+            <a style="text-decoration-line: none" href="/los-oradores">
+              <a style="color:gray">Los Oradores</a></a
+            >
+          </li>
+          <li class="menuli">
+            <a style="text-decoration-line: none" href="/lugar-fecha">
+              <a style="color: gray">El lugar y la fehca</a></a
+            >
+          </li>
+
+          <li class="menuli">
+            <a style="text-decoration-line: none" href="/ser-orador">
+              <a style="color: white">Conviertete en Orador</a></a
+            >
+          </li>
+          <li class="menuli">
+            <a
+            style="color: rgb(20, 153, 26); text-decoration-line: none"
+            href="/pages/comprar.html"
+            >            
+              Comprar Tickets
+            </a>
+          </li>
+        </ul>
+      </section>
+
+   
+    </nav>
+    <section class="carde">
+      <div class="card-container">
+        <div class="card" style="text-align: center;">
+          
+          <h2>ESTUDIANTE</h2>
+          <p>Tienen un descuento       
+          </p>
+          <h2 style="font-weight: bolder;">80%</h2>
+          <p>*presentar documentacion       
+          </p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          
+          <h2>TRAINEE</h2>
+          <p>Tienen un descuento       
+          </p>
+          <h2 style="font-weight: bolder;">50%</h2>
+          <p>*presentar documentacion       
+          </p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          
+          <h2>JUNIOR</h2>
+          <p>Tienen un descuento       
+          </p>
+          <h2 style="font-weight: bolder;">15%</h2>
+          <p>*presentar documentacion       
+          </p>
+        </div>
+      </div>
+    </section>
+  <div class="midd" style="text-align: center;">
+    <P>VENTA</P>
+    <h2>VALOR DEL TICKET $200</h2>
+  </div>
+
+  <div class="formcompra" style="padding: 15%; padding-top: 16px;">
+    <div class="mb-3" style="display: flex;align-items: center;">
+      <div style="margin-right: 16px;width: 100%;">
+      <input
+       
+        type="text"
+        id="enombre"
+        placeholder="Nombre "
+        formControlName="nombre"
+        
+      />
+      </div>
+      <div style="width: 100%;">
+      <input
+        
+        type="text"
+        id="eapellido"
+        placeholder="Apellido"
+        formControlName="apellido"
+
+      />
+      </div>
+    </div>
+
+    
+    <div class="mb-3">
+          <input
+          type="email"
+          id="email"
+          placeholder="Correo "
+          formControlName="correo"
+          />
+    </div>
+
+    
+    
+    <div class="mb-3" style="display: flex;align-items: center;">
+      <div style="display: table-column; width: 100%;">
+      <label> Cantidad:</label>
+      <div style="margin-right: 16px;">
+        <input
+        
+        type="number"
+        id="ecantidad"
+        placeholder="Cantidad "
+        formControlName="cantidad"
+        />
+      </div>
+    </div>
+
+    <div style="display: table-column;width: 100%;">
+        <label> Categoria:</label>
+        <div >
+        
+          <select id="opciones" name="opciones" style="width: 100%;background:transparent;  padding: 16px;        border: 1px solid #ccc;
+          border-radius: 4px;">
+          <option value="opcion1">JUNIOR</option>
+          <option value="opcion2">TRAINEE</option>
+          <option value="opcion3">ESTUDIANTE</option>
+        </select>
+   
+      </div>
+    </div>  
+
+    </div>
+    
+    
+    <div class="mb-3" style="background-color: gray; border-radius: 8px;">
+      <input
+      type="text"
+      id="totalapagar"
+      placeholder="Total a pagar $: "
+      formControlName="totalapagar"
+      disabled
+      />
+        <!-- Hacer una funcion que de acuerdo a los valores = cantidad * 200 *(selector de opcion) 0.8 / 0.5 / 0.15 -->
+    </div>
+    <div class="botones" style="display: flex;align-items: center;">
+      <input type="submit" value="Borrar" style="margin-right: 16px; background-color: red;">
+      <input type="submit" value="Enviar">
+    </div>
+  </div>
+    <footer class="footer">
+
+      <ul class="footerul">
+        <li class="footerli">Preguntar Frecuentes</li>
+        <li class="footerli">Contactanos</li>
+        <li class="footerli">Prensa</li>
+        <li class="footerli">Conferencias</li>
+        <li class="footerli">Terminos y condiciones</li>
+        <li class="footerli">Privacidad</li>
+        <li class="footerli">Estudiantes</li>
+      </ul>
+
+    </footer>
+  </body>
+</html>
+

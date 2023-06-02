@@ -38,7 +38,7 @@
     <nav class="nav">
       <!--Normal -->
       <section class="logocodoacodo">
-        <a href="/home">
+        <a href="/index.html">
           <img class="pnglogocodoacodo" src="../../../img/codoacodo.png" alt=""
         /></a>
         <div class="texto">
@@ -52,17 +52,17 @@
         <ul class="menuul">
           <li class="menuli">
             <a style="text-decoration-line: none" href="/conferencia">
-              <a style="color: white">La conferencia</a></a
+              <a style="color: gray">La conferencia</a></a
             >
           </li>
           <li class="menuli">
             <a style="text-decoration-line: none" href="/los-oradores">
-              <a style="color: white">Los Oradores</a></a
+              <a style="color:gray">Los Oradores</a></a
             >
           </li>
           <li class="menuli">
             <a style="text-decoration-line: none" href="/lugar-fecha">
-              <a style="color: white">El lugar y la fehca</a></a
+              <a style="color: gray">El lugar y la fehca</a></a
             >
           </li>
 
@@ -72,33 +72,65 @@
             >
           </li>
           <li class="menuli">
-            <a style="text-decoration-line: none" href="/comprar-tickets">
-              <a style="color: rgb(0, 148, 32)">Comprar Tickets</a>
+            <a
+            style="color: rgb(20, 153, 26); text-decoration-line: none"
+            href="/pages/comprar.html"
+            >            
+              Comprar Tickets
             </a>
           </li>
         </ul>
       </section>
 
       <!--WRAPPER CUANDO SE ACHICA -->
-
-      <!--      
-      <section class="menuw" *ngIf="onAchica()" >
-       <button class="fa fa-bars" style="color: white; text-align: center; background-color: black; border:none" ></button>
-       <div class="menuw-content">
-            <a style="text-decoration-line: none" href="/nosotros">
-             La conferencia</a>
-           <a style="text-decoration-line: none" href="/servicios">
-             Los Oradores</a>
-            <a style="text-decoration-line: none" href="/contacto">
-              El lugar y la fehca</a>
-              <a style="text-decoration-line: none" href="/contacto">
-                Conviertete en Orador</a>
-                <a style="text-decoration-line: none" href="/contacto">
-                   Comprar tickets</a>
+      <section class="menuw">
+        <!-- Menú (wrapper) -->
+        <div id="menuWrapper" class="menu-wrapper" style="text-align: center">
+          <button id="menuToggle" class="menu-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div id="wrapperMenu" class="menu">
+            <ul>
+              <li class="menuli">
+                <a style="text-decoration-line: none" >
+                  
+                  <ul>
+                   66666666666666666666666
+                  </ul></a
+                >
+              </li>
+              <li class="menuli">
+                <a style="text-decoration-line: none">
+                 
+                  <ul>
+                  555555555555555555555
+                  </ul></a
+                >
+              </li>
+              <li class="menuli">
+                <a style="text-decoration-line: none" >
+                
+                  <ul>
+                  -----------------
+                  </ul></a
+                >
+              </li>
+              <li class="menuli">
+                <a style="text-decoration-line: none" >
+                 
+                  <ul>
+                    4444444444444444444
+                  </ul></a
+                >
+              </li>
+            </ul>
           </div>
-     
-            
-      </section> -->
+        </div>
+      </section>
+
+      
+
+      
     </nav>
  
 
@@ -115,9 +147,12 @@
           </p>
         </div>
           <div class="buttonimages">
+
           <button class="buttonimg2">Quiero ser Orador</button>
+          <a href="pages/comprar.html">
+
         <button class="buttonimg1">Comprar Tickets</button>
-      
+      </a>
       </div>
       </section>
     </main>
@@ -198,6 +233,20 @@
       </form>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      
+      <ul class="footerul">
+        <li class="footerli">Preguntar Frecuentes</li>
+        <li class="footerli">Contactanos</li>
+        <li class="footerli">Prensa</li>
+        <li class="footerli">Conferencias</li>
+        <li class="footerli">Terminos y condiciones</li>
+        <li class="footerli">Privacidad</li>
+        <li class="footerli">Estudiantes</li>
+      </ul>
+
+    </footer>
+    
+    <script src="script.js"></script>
   </body>
 </html>
