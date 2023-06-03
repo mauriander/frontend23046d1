@@ -121,8 +121,51 @@
     <P>VENTA</P>
     <h2>VALOR DEL TICKET $200</h2>
   </div>
+<div id="formulariocompra" class="formcompra">
+  <div class="mb-3">
+    <div class="input-wrapper">
+      <input type="text" id="enombre" placeholder="Nombre" formControlName="nombre" />
+    </div>
+    <div class="input-wrapper">
+      <input type="text" id="eapellido" placeholder="Apellido" formControlName="apellido" />
+    </div>
+  </div>
 
-<div id="formulariocompra" class="formcompra" style="padding: 15%; padding-top: 16px;">
+  <div class="mb-3">
+    <input type="email" id="email" placeholder="Correo" formControlName="correo" />
+  </div>
+
+  <div class="mb-3">
+    <div class="input-wrapper">
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" placeholder="Cantidad" formControlName="cantidad" min="1" />
+    </div>
+    <div style="display: table-column;width: 100%;">
+      <label for="opciones"> Categoria:</label>
+      <div >
+      
+        <select id="opciones" name="opciones" style="width: 100%;background:transparent;  padding: 16px;        border: 1px solid #ccc;
+        border-radius: 4px;">
+        <option value="15">JUNIOR</option>
+        <option value="50">TRAINEE</option>
+        <option value="80">ESTUDIANTE</option>
+      </select>
+ 
+    </div>
+  </div>  
+  </div>
+ 
+  <div class="mb-3" style="background-color: lightblue; border-radius: 8px;">
+    <p id="total" style="font-size: 20px; margin-left: 8px;"></p>
+  </div>
+
+  <div id="botones" class="botones">
+    <input type="submit" id="borrarBtn" onclick="borrarFormulario()" value="Borrar" style="margin-right: 16px;">
+      <input  type="submit" id="resumenBtn" onclick="calcularTotal2()" value="Resumen">
+  </div>
+</div>
+
+<!-- <div id="formulariocompra" class="formcompra" onsubmit="return validarFormulario()" style="padding: 15%; padding-top: 16px;">
     
     <div class="mb-3" style="display: flex;align-items: center;">
       <div style="margin-right: 16px;width: 100%;">
@@ -168,6 +211,7 @@
         id="cantidad"
         placeholder="Cantidad "
         formControlName="cantidad"
+        
         />
       </div>
     </div>
@@ -191,16 +235,16 @@
     
     <div class="mb-3" style="background-color: lightblue; border-radius: 8px;">
       <p id="total" style="font-size: 20px; margin-left: 8px; "></p> 
-      <!-- Hacer una funcion que de acuerdo a los valores = cantidad * 200 *(selector de opcion) 0.8 / 0.5 / 0.15 -->
+      
     </div>
-    <div class="botones" style="display: flex;align-items: center;">
+    <div id="botones" class="botones" style="display: flex;align-items: center;">
       <input type="submit" onclick="borrarFormulario()" value="Borrar" style="margin-right: 16px;">
-      <input type="submit" onclick="calcularTotal2()" value="Resumen">
+      <input  type="submit" onclick="calcularTotal2()" value="Resumen">
     </div>
     
     
    
-  </div>
+  </div> -->
     <footer class="footer">
 
       <ul class="footerul">
