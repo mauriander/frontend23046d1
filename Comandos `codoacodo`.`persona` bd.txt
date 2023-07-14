@@ -1,0 +1,18 @@
+CREATE TABLE `codoacodo`.`persona` (
+  `id` INT NOT NULL,
+  `nombre` VARCHAR(40) NOT NULL,
+  `apellido` VARCHAR(40) NOT NULL,
+  `edad` TINYINT(2) NOT NULL,
+  `fecha` TIMESTAMP NOT NULL,
+  `provincia` VARCHAR(30) NOT NULL,
+  PRIMARY KEY (`id`));
+
+
+INSERT INTO `codoacodo`.`persona` (`nombre`, `apellido`, `edad`, `fecha`, `provincia`) VALUES ('Hector', 'Garcia', '35', '1987-08-02', 'Neuqeun');
+INSERT INTO `codoacodo`.`persona` (`nombre`, `apellido`, `edad`, `fecha`, `provincia`) VALUES ('Esteban', 'Gimenez', '51', '1971-10-04', 'Formosa');
+
+INSERT INTO `codoacodo`.`persona` (`nombre`, `apellido`, `edad`, `fecha`, `provincia`) VALUES ('Emanuel', 'Rojas', '25', '1998-04-04', 'Salta');
+INSERT INTO `codoacodo`.`persona` (`nombre`, `apellido`, `edad`, `fecha`, `provincia`) VALUES ('Marian', 'Lopez', '29', '1993-06-12', 'Salta');
+INSERT INTO `codoacodo`.`persona` (`nombre`, `apellido`, `edad`, `fecha`, `provincia`) VALUES ('Rosana', 'Castro', '40', '1982-12-12', 'Mendoza');
+
+
