@@ -1,0 +1,4 @@
+data\OradoresDAO.class
+model\Orador.class
+data\Conexion.class
+controller\ServeletControlador.class
