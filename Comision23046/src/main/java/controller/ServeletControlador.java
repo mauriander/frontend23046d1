@@ -60,7 +60,7 @@ public class ServeletControlador extends HttpServlet{
                      insertarOrador(req, res);
                     break;
                 case "modificar":
-                   // modificarOrador(req, res);
+                    modificarOrador(req, res);
                     break;
                 default:
                     accionDefault(req, res);

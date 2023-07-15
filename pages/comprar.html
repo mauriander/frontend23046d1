@@ -7,11 +7,7 @@
     <title>Conferencia BS AS</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href=""
-    />
+    <link rel="icon" type="image/x-icon" href="" />
 
     <link
       rel="stylesheet"
@@ -57,7 +53,7 @@
           </li>
           <li class="menuli">
             <a style="text-decoration-line: none" href="/los-oradores">
-              <a style="color:gray">Los Oradores</a></a
+              <a style="color: gray">Los Oradores</a></a
             >
           </li>
           <li class="menuli">
@@ -73,99 +69,136 @@
           </li>
           <li class="menuli">
             <a
-            style="color: rgb(20, 153, 26); text-decoration-line: none"
-            href="/pages/comprar.html"
-            >            
+              style="color: rgb(20, 153, 26); text-decoration-line: none"
+              href="/pages/comprar.html"
+            >
               Comprar Tickets
             </a>
           </li>
         </ul>
       </section>
-
-   
     </nav>
-    <section class="carde" style="padding-top: 12%;">
+    <section class="carde" style="padding-top: 12%">
       <div class="card-container">
-        <div class="card" style="text-align: center; border-color: blue; border-width: 4px;">
-          
+        <div
+          class="card"
+          style="text-align: center; border-color: blue; border-width: 4px"
+        >
           <h2>ESTUDIANTE</h2>
-          <p>Tienen un descuento       
-          </p>
-          <h2 style="font-weight: bolder;">80%</h2>
-          <p>*presentar documentacion       
-          </p>
+          <p>Tienen un descuento</p>
+          <h2 style="font-weight: bolder">80%</h2>
+          <p>*presentar documentacion</p>
         </div>
 
-        <div class="card" style="text-align: center; border-color: lightblue; border-width: 4px;">
-          
+        <div
+          class="card"
+          style="text-align: center; border-color: lightblue; border-width: 4px"
+        >
           <h2>TRAINEE</h2>
-          <p>Tienen un descuento       
-          </p>
-          <h2 style="font-weight: bolder;">50%</h2>
-          <p>*presentar documentacion       
-          </p>
+          <p>Tienen un descuento</p>
+          <h2 style="font-weight: bolder">50%</h2>
+          <p>*presentar documentacion</p>
         </div>
 
-        <div class="card" style="text-align: center; border-color:yellow; border-width: 4px;">
-          
+        <div
+          class="card"
+          style="text-align: center; border-color: yellow; border-width: 4px"
+        >
           <h2>JUNIOR</h2>
-          <p>Tienen un descuento       
-          </p>
-          <h2 style="font-weight: bolder;">15%</h2>
-          <p>*presentar documentacion       
-          </p>
+          <p>Tienen un descuento</p>
+          <h2 style="font-weight: bolder">15%</h2>
+          <p>*presentar documentacion</p>
         </div>
       </div>
     </section>
-  <div class="midd" style="text-align: center;">
-    <P>VENTA</P>
-    <h2>VALOR DEL TICKET $200</h2>
-  </div>
-<div id="formulariocompra" class="formcompra">
-  <div class="mb-3">
-    <div class="input-wrapper">
-      <input type="text" id="enombre" placeholder="Nombre" formControlName="nombre" />
+    <div class="midd" style="text-align: center">
+      <p>VENTA</p>
+      <h2>VALOR DEL TICKET $200</h2>
     </div>
-    <div class="input-wrapper">
-      <input type="text" id="eapellido" placeholder="Apellido" formControlName="apellido" />
+    <div id="formulariocompra" class="formcompra">
+      <div class="mb-3">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="enombre"
+            placeholder="Nombre"
+            formControlName="nombre"
+          />
+        </div>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="eapellido"
+            placeholder="Apellido"
+            formControlName="apellido"
+          />
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <input
+          type="email"
+          id="email"
+          placeholder="Correo"
+          formControlName="correo"
+        />
+      </div>
+
+      <div class="mb-3">
+        <div class="input-wrapper">
+          <label for="cantidad">Cantidad:</label>
+          <input
+            type="number"
+            id="cantidad"
+            placeholder="Cantidad"
+            formControlName="cantidad"
+            min="1"
+          />
+        </div>
+        <div style="display: table-column; width: 100%">
+          <label for="opciones"> Categoria:</label>
+          <div>
+            <select
+              id="opciones"
+              name="opciones"
+              style="
+                width: 100%;
+                background: transparent;
+                padding: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+              "
+            >
+              <option value="15">JUNIOR</option>
+              <option value="50">TRAINEE</option>
+              <option value="80">ESTUDIANTE</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3" style="background-color: lightblue; border-radius: 8px">
+        <p id="total" style="font-size: 20px; margin-left: 8px"></p>
+      </div>
+
+      <div id="botones" class="botones">
+        <input
+          type="submit"
+          id="borrarBtn"
+          onclick="borrarFormulario()"
+          value="Borrar"
+          style="margin-right: 16px"
+        />
+        <input
+          type="submit"
+          id="resumenBtn"
+          onclick="calcularTotal2()"
+          value="Resumen"
+        />
+      </div>
     </div>
-  </div>
 
-  <div class="mb-3">
-    <input type="email" id="email" placeholder="Correo" formControlName="correo" />
-  </div>
-
-  <div class="mb-3">
-    <div class="input-wrapper">
-      <label for="cantidad">Cantidad:</label>
-      <input type="number" id="cantidad" placeholder="Cantidad" formControlName="cantidad" min="1" />
-    </div>
-    <div style="display: table-column;width: 100%;">
-      <label for="opciones"> Categoria:</label>
-      <div >
-      
-        <select id="opciones" name="opciones" style="width: 100%;background:transparent;  padding: 16px;        border: 1px solid #ccc;
-        border-radius: 4px;">
-        <option value="15">JUNIOR</option>
-        <option value="50">TRAINEE</option>
-        <option value="80">ESTUDIANTE</option>
-      </select>
- 
-    </div>
-  </div>  
-  </div>
- 
-  <div class="mb-3" style="background-color: lightblue; border-radius: 8px;">
-    <p id="total" style="font-size: 20px; margin-left: 8px;"></p>
-  </div>
-
-  <div id="botones" class="botones">
-    <input type="submit" id="borrarBtn" onclick="borrarFormulario()" value="Borrar" style="margin-right: 16px;">
-      <input  type="submit" id="resumenBtn" onclick="calcularTotal2()" value="Resumen">
-  </div>
-</div>
-
-<!-- <div id="formulariocompra" class="formcompra" onsubmit="return validarFormulario()" style="padding: 15%; padding-top: 16px;">
+    <!-- <div id="formulariocompra" class="formcompra" onsubmit="return validarFormulario()" style="padding: 15%; padding-top: 16px;">
     
     <div class="mb-3" style="display: flex;align-items: center;">
       <div style="margin-right: 16px;width: 100%;">
@@ -245,8 +278,121 @@
     
    
   </div> -->
-    <footer class="footer">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-center mx-6">
+        <div class="col-3 text-center border border-info color-box m-1 p-1">
+          <h4>Estudiante</h4>
+          <p>Tiene un descuento</p>
+          <b>80%</b>
+          <p>* presentar documentación</p>
+        </div>
+        <div class="col-3 text-center border border-info color-box m-1 p-1">
+          <h4>Trainee</h4>
+          <p>Tiene un descuento</p>
+          <b>50%</b>
+          <p>* presentar documentación</p>
+        </div>
+        <div class="col-3 text-center border border-warning color-box m-1 p-1">
+          <h4>Junior</h4>
+          <p>Tiene un descuento</p>
+          <b>15%</b>
+          <p>* presentar documentación</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="container w-50 text-start my-5" id="tickets">
+      <p class="text-center mt-4 mb-0">VENTA</p>
+      <p class="fs-2 text-center">VALOR DE TICKET $200</p>
+      <form acceptCharset="UTF-8">
+        <div class="row">
+          <div class="col-sm-auto col-md-6 my-1 mb-3">
+            <input
+              type="text"
+              id="name-ticket"
+              class="form-control"
+              placeholder="Nombre"
+              aria-label="First name"
+              required
+            />
+          </div>
+          <div class="col-sm-auto col-md-6 my-1 mb-3">
+            <input
+              type="text"
+              id="last-name-ticket"
+              class="form-control"
+              placeholder="Apellido"
+              aria-label="Last name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email-ticket">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email-ticket"
+              aria-describedby="emailHelp"
+              placeholder="Correo"
+              required
+            />
+          </div>
+          <div class="input-wrapper col-md-6 mb-3">
+            <label for="cantidad">Cantidad:</label>
+            <input
+              class="form-control"
+              type="number"
+              id="cantidad"
+              placeholder="Cantidad"
+              formControlName="cantidad"
+              min="1"
+            />
+          </div>
+
+          <div class="form-group col-md-6 mb-3">
+            <label for="opciones">Categoría</label>
+
+            <select class="form-control" id="opciones" name="opciones" required>
+              <option value="" disabled selected>Categoría</option>
+              <option value="15">JUNIOR</option>
+              <option value="50">TRAINEE</option>
+              <option value="80">ESTUDIANTE</option>
+            </select>
+          </div>
+        </div>
+        <input
+          type="submit"
+          id="resumenBtn"
+          onclick="calcularTotal2()"
+          value="Resumen"
+          value="${total}"
+        />
+        <p id="total">value="${total}</p>
+
+        <div class="alert alert-primary border-0 mb-3" role="alert" id="total">
+          Total a pagar
+        </div>
+        <p id="total" style="font-size: 20px; margin-left: 8px"></p>
+        <div id="mensajes"></div>
+        <div class="row">
+          <!-- <div class="col-md-6 mb-3">
+                <button type="submit" id="borrarBtn" onclick="borrarFormulario()" class="btn btn-light btn-block">Borrar</button>
+            </div>-->
+          <div class="col-md-6 mb-3">
+            <button
+              type="submit"
+              id="resumenBtn"
+              onclick="calcularTotal2()"
+              class="btn btn-success btn-block"
+            >
+              Resumen
+            </button>
+          </div>
+        </div>
+      </form>
+      <!--end form -->
+    </div>
+    <footer class="footer">
       <ul class="footerul">
         <li class="footerli">Preguntar Frecuentes</li>
         <li class="footerli">Contactanos</li>
@@ -256,9 +402,7 @@
         <li class="footerli">Privacidad</li>
         <li class="footerli">Estudiantes</li>
       </ul>
-
     </footer>
     <script src="script.js"></script>
   </body>
 </html>
-

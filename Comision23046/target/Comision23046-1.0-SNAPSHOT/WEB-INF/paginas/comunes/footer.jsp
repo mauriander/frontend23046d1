@@ -4,12 +4,18 @@
     Author     : MAURICIO
 --%>
 
-<footer id="footer" class="bg-warning text-white mt-5 p-5">
-    <div class="container">
-        <div class="col">
-            <p class="lead text-center">
-                Copyright &copy; Mauricio Carlos
-            </p>
-        </div>
-    </div>
+
+ 
+<footer class="bg-dark text-white w-100 h-100" style=" padding: 0.1%; font-size: 1.2em;margin-top: 15px;">
+  <div class="d-flex justify-content-between" style="padding: 15px;">
+    
+        <div class="fs-5" >Preguntar Frecuentes</div>
+         <div class="fs-5">Contactanos</div>
+         <div class="fs-5">Prensa</div>
+         <div class="fs-5">Conferencias</div>
+         <div class="fs-5">Terminos y condiciones</div>
+         <div class="fs-5">Privacidad</div>
+         <div class="fs-5">Estudiantes</div>
+  </div>
 </footer>
+

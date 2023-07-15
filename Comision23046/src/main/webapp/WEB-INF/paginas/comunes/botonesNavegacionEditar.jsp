@@ -10,9 +10,9 @@
         <div class="row">
             
             <div class="col-md-3">
-                <a href="index.jsp" class="btn btn-light btn-block">
+                <a href="${pageContext.request.contextPath}/servletControlador" class="btn btn-light btn-block">
                     <i class="fas fa-arrow-left"></i>
-                    Regresar al Inicio
+                    Regresar a la lista
                 </a>
             </div>
             

@@ -8,15 +8,16 @@
     <div class="container"> 
         <div class="row">
             <div class="col-md-3">
-<!--                <a href="#" class="btn btn-primary btn-block" 
-                   data-bs-toggle="modal" data-bs-target="#agregarLibroModal">
-                    <i class="fas fa-plus"></i> Agregar Libro
-                </a>-->
-                
-                <button type="button" class="btn btn-primary btn-block" 
+                <!--                <a href="#" class="btn btn-primary btn-block" 
+                                   data-bs-toggle="modal" data-bs-target="#agregarLibroModal">
+                                    <i class="fas fa-plus"></i> Agregar Libro
+                                </a>-->
+
+                <button type="button" class="btn btn-dark btn-block" 
                         data-bs-toggle="modal" data-bs-target="#agregarOradorModal">
                     <i class="fas fa-plus"></i> Agregar Oradores
                 </button>
+
             </div>
         </div>
     </div>
