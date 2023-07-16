@@ -1,6 +1,6 @@
 # Proyecto Comisión 23046
-
-Este es el README del proyecto Comisión 23046, el cual es una aplicación web desarrollada utilizando tecnologías frontend y backend. El proyecto utiliza JavaScript, HTML, CSS, Bootstrap en el frontend, y Java con NetBeans como backend, junto con una base de datos MySQL.
+#codoacodo CODO A CODO 4.0
+Este es el README del proyecto Comisión 23046 que se realizo en el curso fullstack Java de CODO A CODO 4.0, el cual es una aplicación web desarrollada utilizando tecnologías frontend y backend. El proyecto utiliza JavaScript, HTML, CSS, Bootstrap en el frontend, y Java con NetBeans como backend, junto con una base de datos MySQL.
 
 ## Descripción
 
