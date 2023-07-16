@@ -8,13 +8,13 @@
 <div class="modal fade" id="agregarOradorModal" tabindex="-1" aria-labelledby="agregarOradorModal" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header bg-grey">
+            <div class="modal-header bg-grey"style="background-color: lightblue;">
                 <h5 class="modal-title">Agregar Orador</h5>
                 <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <form action="${pageContext.request.contextPath}/servletControlador?accion=insertar" method="POST" class="was-validated">
-                <div class="modal-body">
+                <div class="modal-body" style="background-image: linear-gradient(lightblue, lightcyan);">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
                         <input type="text" class="form-control" name="nombre" required/>
@@ -37,55 +37,56 @@
                         <select class="form-control" name="tecnologia" id="tecnologia" onchange="toggleOtraTecnologia()" required>
                             <option value="">Seleccione una tecnología</option>
 
-                            <option value="abap">ABAP</option>
-                            <option value="apex">Apex</option>
-                            <option value="c">C</option>
-                            <option value="clojure">Clojure</option>
-                            <option value="coffeescript">CoffeeScript</option>
-                            <option value="cpp">C++</option>
-                            <option value="crystal">Crystal</option>
-                            <option value="dart">Dart</option>
-                            <option value="dm">DM</option>
-                            <option value="elixir">Elixir</option>
-                            <option value="emacs">Emacs Lisp</option>
-                            <option value="erlang">Erlang</option>
-                            <option value="fsharp">F#</option>
-                            <option value="fortran">Fortran</option>
-                            <option value="freemarker">FreeMarker</option>
-                            <option value="go">Go</option>
-                            <option value="groovy">Groovy</option>
-                            <option value="haskell">Haskell</option>
-                            <option value="java">Java</option>
-                            <option value="javascript">JavaScript</option>
-                            <option value="jsonnet">Jsonnet</option>
-                            <option value="julia">Julia</option>
-                            <option value="kotlin">Kotlin</option>
-                            <option value="lua">Lua</option>
-                            <option value="matlab">Matlab</option>
-                            <option value="nix">Nix</option>
-                            <option value="objc">Objective-C</option>
-                            <option value="objcpp">Objective-C++</option>
-                            <option value="ocaml">OCaml</option>
-                            <option value="perl">Perl</option>
-                            <option value="perl6">Perl 6</option>
-                            <option value="php">PHP</option>
-                            <option value="powershell">PowerShell</option>
-                            <option value="puppet">Puppet</option>
-                            <option value="python">Python</option>
-                            <option value="purepcript">PureScript</option>
-                            <option value="r">R</option>
-                            <option value="roff">Roff</option>
-                            <option value="ruby">Ruby</option>
-                            <option value="rust">Rust</option>
-                            <option value="scala">Scala</option>
-                            <option value="shell">Shell</option>
-                            <option value="smalltalk">Smalltalk</option>
-                            <option value="swift">Swift</option>
-                            <option value="typescript">TypeScript</option>
-                            <option value="vala">Vala</option>
-                            <option value="vb">Visual Basic</option>
-                            <option value="vim">Vim script</option>
-                            <option value="webassembly">WebAssembly</option>
+                            <option value="Abap">ABAP</option>
+                            <option value="Apex">Apex</option>
+                            <option value="C">C</option>
+                            <option value="Clojure">Clojure</option>
+                            <option value="CoffeeScript">CoffeeScript</option>
+                            <option value="Cpp">C++</option>
+                            <option value="Crystal">Crystal</option>
+                            <option value="Dart">Dart</option>
+                            <option value="Dm">DM</option>
+                            <option value="Elixir">Elixir</option>
+                            <option value="Emacs">Emacs Lisp</option>
+                            <option value="Erlang">Erlang</option>
+                            <option value="Fsharp">F#</option>
+                            <option value="Fortran">Fortran</option>
+                            <option value="Freemarker">FreeMarker</option>
+                            <option value="Go">Go</option>
+                            <option value="Groovy">Groovy</option>
+                            <option value="Haskell">Haskell</option>
+                            <option value="Java">Java</option>
+                            <option value="Javascript">JavaScript</option>
+                            <option value="Jsonnet">Jsonnet</option>
+                            <option value="Julia">Julia</option>
+                            <option value="Kotlin">Kotlin</option>
+                            <option value="Lua">Lua</option>
+                            <option value="Matlab">Matlab</option>
+                            <option value="Nix">Nix</option>
+                            <option value="Objc">Objective-C</option>
+                            <option value="Objcpp">Objective-C++</option>
+                            <option value="Ocaml">OCaml</option>
+                            <option value="Perl">Perl</option>
+                            <option value="Perl6">Perl 6</option>
+                            <option value="Php">PHP</option>
+                            <option value="Powershell">PowerShell</option>
+                            <option value="Puppet">Puppet</option>
+                            <option value="Python">Python</option>
+                            <option value="Purepcript">PureScript</option>
+                            <option value="R">R</option>
+                            <option value="Roff">Roff</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="Rust">Rust</option>
+                            <option value="Scala">Scala</option>
+                            <option value="Shell">Shell</option>
+                            <option value="Smalltalk">Smalltalk</option>
+                            <option value="Swift">Swift</option>
+                            <option value="Typescript">TypeScript</option>
+                            <option value="Vala">Vala</option>
+                            <option value="Vb">Visual Basic</option>
+                            <option value="Vim">Vim script</option>
+                            <option value="Webassembly">WebAssembly</option>
+
 
 
                             <option value="otro">Otra</option>

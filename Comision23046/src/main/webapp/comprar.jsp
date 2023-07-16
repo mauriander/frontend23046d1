@@ -20,11 +20,11 @@
 
 
     </head>
-    <body>
+    <body  >
 
         <jsp:include page="WEB-INF/paginas/comunes/header.jsp"/>
 
-        <div class="container">
+        <div class="container" style="padding-top: 32px;" >
             <div class="row d-flex flex-wrap justify-content-center mx-6">
                 <div class="col-3 text-center border border-info color-box m-1 p-1">
                     <h4>Estudiante</h4>
@@ -95,7 +95,7 @@
                 </div>
                 
                 
-                <div class="row">
+                <div class="row"style="min-height: 40vh;">
                      <div class="col-md-6 mb-3">
                         <button type="submit" id="borrarBtn" onclick="borrarFormulario()" class="btn btn-light btn-block">Borrar</button>
                     </div>
