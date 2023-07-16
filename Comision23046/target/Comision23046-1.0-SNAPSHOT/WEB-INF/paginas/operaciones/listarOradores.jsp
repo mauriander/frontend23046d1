@@ -123,7 +123,7 @@
 </div>
 </section>
         -->
-        <section id="oradores"style=" display: flex;         min-height: 90vh;">
+        <section id="oradores" style=" display: flex;         min-height: 90vh;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
